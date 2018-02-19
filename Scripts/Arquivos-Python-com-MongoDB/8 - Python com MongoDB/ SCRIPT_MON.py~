@@ -1,0 +1,56 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+#SCRIPT_MON.py
+
+"""
+  Nesse script vamos o 
+  conceito de 1 -> N
+
+
+  Modificado em 30 de março de 2017
+  por Vitor Mazuco (vitor.mazuco@gmail.com)
+"""
+
+import sys
+
+try:
+	from pymongo import MongoClient
+except:
+    sys.exit("[!] Por favor, intale a biblioteca sqlalchemy com o comando: sudo apt-get install python-pymongo")
+
+
+client = MongoClient("127.0.0.1")
+db=client["devops"]
+
+db.fila.remove()
+db.fila.insert({"_id":1,"servico":"Intranet","status":0})
+db.fila.insert({"_id":2,"servico":"Website","status":0})
+db.fila.insert({"_id":3,"servico":"Backup","status":0})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
