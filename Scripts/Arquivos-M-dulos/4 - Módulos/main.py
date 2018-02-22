@@ -20,10 +20,10 @@ import utils
 utils.escreverArquivo("dados","Esses são os conteúdos dos arquivos")
 
 # Reutiliza a função lerArquivo do arquivo utils.py
-print utils.lerArquivo("dados")
+print (utils.lerArquivo("dados"))
 
 # Reutiliza a função dataAtual do arquivo utils.py
-print utils.dataAtual()
+print (utils.dataAtual())
 
 
 

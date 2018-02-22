@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*- 
 
-contador = 0
+counter = 0
 
-# Irá gerar um script que mostrará no terminal os números de zero a 10!
-while contador < 20:
-	print contador
-	contador += 1
+# This script will list in the terminal the numbers from 0 to 20!
+while counter < 20:
+	print (counter)
+	counter += 1

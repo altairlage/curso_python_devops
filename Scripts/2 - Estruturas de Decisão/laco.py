@@ -7,7 +7,7 @@ lista = [ # 0    # 1       # 2
 ]
 
 for i in lista:
-	print i
+	print (i)
 
 
 # Por padrão o laço for nao printa os números do índice da lista. Para isso é necessário chamar o comando "enumerate"
@@ -17,6 +17,13 @@ lista2 = [# 0    # 1       # 2
 ]
 
 for num,item in enumerate(lista):
-	print "%s está na posição %s"%(item,num)
+	print ("%s está na posição %s" % (item, num))
+
+for item in lista:
+	if item == "devops":
+		print ("'devops' found!")
+		break
+else:
+	print("'devops' not found in the list")
 
 

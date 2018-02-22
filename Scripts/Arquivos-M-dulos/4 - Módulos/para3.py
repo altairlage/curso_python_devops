@@ -19,10 +19,10 @@ client = SSHClient()
 client.load_system_host_keys()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
-client.connect("192.168.1.12",username='root',password='123456')
+client.connect("10.25.26.245",username='user',password='123456')
 stdin,stdout,stderr = client.exec_command("ls -la")
 
-print stdout.read()
+print (stdout.read())
 
 
 

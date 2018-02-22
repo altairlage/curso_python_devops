@@ -34,9 +34,15 @@ def cupomDesconto(cupom=""):
 	else:
 		return 1
 
-print "o total de sua compra é de: ", (totalCarrinho(carrinho)
-	  *cupomDesconto())
-print "usando o cupom gratis seu valor será de: ",(totalCarrinho(carrinho)*cupomDesconto("gratis")),"30% menos!"
+print ("o total de sua compra é de: ", (totalCarrinho(carrinho)*cupomDesconto()))
+print ("usando o cupom gratis seu valor será de: ",(totalCarrinho(carrinho)*cupomDesconto("gratis")),"30% menos!")
+
+
+
+
+
+
+
 
 
 

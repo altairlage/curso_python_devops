@@ -13,13 +13,15 @@
 
   Modificado em 09 de março de 2017
   por Vitor Mazuco (vitor.mazuco@gmail.com)
+
+  http://turing.com.br/pydoc/2.7/tutorial/errors.html#excecoes
 """
 
 try:
 	with open("teste.txt",'r') as f:
-		print f.readline()
+		print (f.readline())
 except Exception as e:
-	print "Erro %s"%e
+	print ("Erro %s"%e)
 
 
 

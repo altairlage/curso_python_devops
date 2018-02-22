@@ -24,12 +24,12 @@ def cadastrarProduto(produto):
 def listarProdutos():
 	global produtos
 	for p in produtos: # Usa a interação for...in para percorrer toda a lista e mostrar quais itens estão presentes
-		print p # printa os itens
+		print (p) # printa os itens
 
 produto = "" # variavel do 'raw_input' ** não confunda com a lista acima! **
-while produto <> "sair": # Ao escrever sair, ele para o script
-	produto = raw_input("Digite o produto que queira cadastrar: ")
+while produto != "sair": # Ao escrever sair, ele para o script
+	produto = input("Digite o produto que queira cadastrar: ")
 	cadastrarProduto(produto) # Chama a função 'cadastrarProduto'
-	print "produtos cadastrados com sucesso" # Printa na tela se foi cadastrado ou não
+	print ("produtos cadastrados com sucesso") # Printa na tela se foi cadastrado ou não
 	listarProdutos() # mostra os produtos cadastrados na lista
 	

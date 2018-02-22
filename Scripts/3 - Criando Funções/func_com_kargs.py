@@ -9,12 +9,14 @@
 
   Modificado em 09 de março de 2017
   por Vitor Mazuco (vitor.mazuco@gmail.com)
+
+  melhor fonte: http://turing.com.br/pydoc/2.7/tutorial/controlflow.html#argumentos-nomeados
 """
 
 def descobreDicionario(**kwargs):
 	for k in kwargs.keys():
-		print "Chave: %s"%k
-		print "tem o valor de: %s"%kwargs[k]
+		print ("Chave: %s" %k)
+		print ("tem o valor de: %s"%kwargs[k])
 
 descobreDicionario(nome="Alan Kay")
 descobreDicionario(figura="Denis Ritchie")

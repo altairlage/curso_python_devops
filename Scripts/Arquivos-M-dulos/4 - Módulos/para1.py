@@ -17,7 +17,7 @@ import paramiko
 
 client = SSHClient()
 
-print client
+print (client)
 
 
 

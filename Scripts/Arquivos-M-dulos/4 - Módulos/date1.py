@@ -23,9 +23,9 @@ acesso = datetime(2017,01,22,00,00,00)
 atual = datetime(2017,01,22,01,02,00)
 
 if (atual - acesso).total_seconds() > 3600:
-	print "Seu token expirou"
+	print ("Seu token expirou")
 else:
-	print "Acesso liberado"
+	print ("Acesso liberado")
 
 
 

@@ -18,14 +18,14 @@ except:
     sys.exit("[!] Por favor, intale a biblioteca mysqldb com o comando: sudo apt-get install python-mysqldb")
 
 try:
-	con = MySQLdb.connect(host="127.0.0.1", user="root", db="projeto", passwd="123456") 
+	con = MySQLdb.connect(host="10.25.26.245", user="root", db="projeto", passwd="123456") 
 	cur = con.cursor()
-	print "Feita a conexão com o banco de dados"
+	print ("Feita a conexão com o banco de dados")
 
 except Exception as e:
-	print "Erro: %s"%e
+	print ("Erro: %s"%e)
 finally:
-	print "Finalizando a conexão com o banco de dados"
+	print ("Finalizando a conexão com o banco de dados")
 	cur.close()
 	con.close()
 

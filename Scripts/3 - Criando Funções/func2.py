@@ -19,9 +19,9 @@ def alterarServidor(ip):
 	global servidor # Chama a variavel global do arquivo
 	servidor = ip # Faz a sobreescrita
 
-print "Servidor atual é:",servidor
+print ("Servidor atual é:",servidor)
 alterarServidor("192.168.3.26") # Chama a função alterarServidor
-print "Servidor alterado o IP para:",servidor
+print ("Servidor alterado o IP para:",servidor)
 
 
 

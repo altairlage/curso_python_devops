@@ -18,9 +18,9 @@ from modulos import utils as outro_nome
 
 outro_nome.escreverArquivo("dados","Esses são os conteúdos dos arquivos")
 
-print outro_nome.lerArquivo("dados")
+print (outro_nome.lerArquivo("dados"))
 
-print outro_nome.dataAtual()
+print (outro_nome.dataAtual())
 
 
 
